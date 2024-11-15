@@ -3,16 +3,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
-    {% else %}
-    <meta name="description" content="{{ site.description }}">
-    <meta property="og:description" content="{{ site.description }}" />
-    {% endif %}
-    <meta name="author" content="{{ site.name }}" />
-
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
+    <meta property="og:title" content="나의 웹페이지 제목" />
+    <meta property="og:description" content="이 페이지는 내가 만든 웹페이지의 예시입니다." />
+    <meta property="og:image" content="https://example.com/thumbnail.jpg" />
+    <meta property="og:url" content="https://raintype.github.io/about/" />
+    <meta property="og:type" content="website" />
